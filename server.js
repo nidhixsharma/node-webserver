@@ -54,7 +54,13 @@ res.render('home.hbs',{
 //   likes:['learning','cooking']
 // });
 // });
-
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',
+{
+  pageTitle:'Portfolio Page',
+  message:'This is Portfoilo Page'
+})
+})
 
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
